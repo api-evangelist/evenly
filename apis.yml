@@ -1,25 +1,66 @@
 aid: evenly
+
 name: Evenly
-description: 'Evenly is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.evenly.com/wp-content/uploads/Evenly_Logo_Blue-1024x343.png
+
+description: 'Evenly provides a cloud‑based platform for dental practices to manage Invisalign and other clear‑aligner treatments. By combining tele‑orthodontic expertise with a SaaS workflow, Evenly helps dentists increase revenue, streamline case management, and deliver remote patient monitoring. The service includes treatment planning, specialist consultations, and a patient portal, enabling practices to keep cases in‑house while offering high‑tech, high‑touch care.'
+
 url: https://raw.githubusercontent.com/api-evangelist/evenly/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Dental
+- Orthodontics
+- SaaS
+- Healthcare
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: LLMsTxt
+  url: llms/evenly-llms.txt
+- type: WellKnown
+  url: well-known/evenly-well-known.yml
+- type: Hosts
+  url: hosts/evenly-hosts.yml
+- type: DomainSecurity
+  url: security/evenly-domain-security.yml
 - type: Website
   url: https://www.evenly.com/
+- type: Documentation
+  url: https://www.evenly.com/dentists/why-evenly/
+- type: Support
+  url: https://www.evenly.com/dentists/support/
+- type: TermsOfService
+  url: https://www.evenly.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.evenly.com/privacy-policy/
+
+apis: []
+
+x-backed-by:
+- nea
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
